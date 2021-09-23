@@ -8,6 +8,7 @@ import { CategoriesService } from '../services/categories.service';
 })
 export class CategoriesComponent implements OnInit {
   categories : any [] = [];
+  displayedColumns: string[] = ['id','nombre','descripcion'];
   constructor(private categorieService : CategoriesService) {
     this.getCategories();
    }
